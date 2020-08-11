@@ -1,0 +1,13 @@
+{
+    "name": "neoistone/mysql_db",
+    "description": "",
+    "authors": [
+        {
+            "name": "Neoistone",
+            "email": "dev@neoistone.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    }
+}
