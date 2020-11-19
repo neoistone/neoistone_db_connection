@@ -1,13 +1,23 @@
+
 {
     "name": "neoistone/mysql_db",
-    "description": "",
+    "description": "This lightweight database class is written with PHP and uses the MySQLi extension, it uses prepared statements to properly secure your queries, no need to worry about SQL injection attacks.",
     "authors": [
         {
             "name": "Neoistone",
-            "email": "dev@neoistone.com"
+            "email": "dev@neoistone.com",
+            "name": "codeshack",
+            "email" : "support@codeshack.io"
         }
     ],
     "require": {
-        "php": "^7.*"
-    }
+        "php": "^7*"
+    },
+    "autoload": {
+	"classmap": [
+	   "src/class.database.php"
+         ]
+    },
+     "minimum-stability": "stable",
+     "license": "MIT"
 }
