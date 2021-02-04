@@ -2,10 +2,10 @@
 class db {
 
     protected $connection;
-	protected $query;
+    protected $query;
     protected $show_errors = TRUE;
     protected $query_closed = TRUE;
-	public $query_count = 0;
+    public $query_count = 0;
     
     private $host = DB_HOST.':'.DB_PORT;
     private $user = DB_USER;
@@ -126,12 +126,15 @@ class db {
         }
     }
 
-	private function _gettype($var) {
-	    if (is_string($var)) return 's';
-	    if (is_float($var)) return 'd';
-	    if (is_int($var)) return 'i';
-	    return 'b';
-	}
+    private function real_escape_string($s1){
+      $this->connection = real_escape_string($s1);
+    }
+    private function _gettype($var) {
+       if (is_string($var)) return 's';
+       if (is_float($var)) return 'd';
+       if (is_int($var)) return 'i';
+	return 'b';
+    }
 
 }
 ?>
